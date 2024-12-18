@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,12 +17,12 @@
 :root {
     font-size: 62.5%;
 
-    --primary: theme('colors.primary');
-    --secondary: theme('colors.secondary');
-    --accent: theme('colors.accent');
+    --primary: theme('colors.yume_black');
+    --secondary: theme('colors.yume_grey');
+    --accent: theme('colors.yume_blue');
 
-    --text-primary: theme('colors.txt-primary');
-    --text-secondary: theme('colors.txt-secondary');
+    --text-primary: theme('colors.yume_white');
+    --text-secondary: theme('colors.yume_grey');
 
     color: var(--text-primary);
 }
@@ -32,25 +32,25 @@ html, body {
     width: 100vw;
     font-size: 1.6rem;
     overflow: hidden;
-    font-family: 'Anek Tamil';
+    font-family: 'Montserrat';
 }
 
 .dialog-background {
-    padding: 0.7vw;
+    padding: 1.5rem;
     box-sizing: border-box;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0) 100%);
-    border: 1px solid rgba(117, 117, 117, 0.48);
+    background: rgba(23, 23, 23, 0.9);
+    border: 1px solid #C1C1C1;
     border-radius: 4px;
 }
 
 .dialog-button {
-    padding: 0.6vw;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.28) 0%, rgba(153, 153, 153, 0) 100%);
-    border: 1px solid rgba(255, 255, 255, 0.48);
+    padding: 1rem;
+    background: linear-gradient(to right, rgba(23, 23, 23, 0.9), rgba(23, 23, 23, 0.9));
+    border: 1px solid #C1C1C1;
     border-radius: 4px;
 }
 
 .dialog-button:hover {
-    border: 1px solid rgba(134, 133, 239, 0.4);
-    background: linear-gradient(90deg, rgba(134, 133, 239, 0.64) 0%, rgba(134, 133, 239, 0.2176) 100%);
+    border: 1px solid #C1C1C1;
+    background: linear-gradient(to right, rgba(23, 23, 23, 0.9), rgba(36, 36, 36, 0.9));
 }
