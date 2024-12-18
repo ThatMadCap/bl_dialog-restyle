@@ -1,3 +1,5 @@
+![bl_dialog-restyle](https://github.com/user-attachments/assets/e6b3746a-7a6f-465c-a128-4fd7019632b6)
+
 # BL Dialog
 
 Docs: https://docs.byte-labs.net/bl_dialog/exports
