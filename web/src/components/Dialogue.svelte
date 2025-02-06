@@ -82,7 +82,7 @@
     <div class="h-[5px] bg-gradient-to-r from-yume_blue to-yume_pink mb-10" style="width: {lineWidth};"></div>
 
     <div class="dialog-background">
-        <p>{displayedText}</p>
+        <p class="break-words overflow-wrap break-word">{@html displayedText}</p>
     </div>
 
     <div class="grid grid-cols-2 gap-4 w-[90%] mt-5">
@@ -90,7 +90,7 @@
             {#each currentDialogue.buttons as item, index}
                 <button
                     on:click={() => selectButton(index + 1, item.id)}
-                    class="dialog-button flex items-center gap-5"
+                    class="dialog-button flex items-center gap-5 break-words overflow-wrap break-word"
                 >
                     <img src={CircleSVG} alt="Circle Icon" width="10" height="10" />
                     {item.label}
